@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:wght@100&family=Young+Serif&display=swap');
+
+$body_background_color : lightgray;
+$lightgray_color:lightgray;
+$body_text_style: "Lora";
+$animatiion_name:body_section;
+$delay_of_animation:0.5s;
+$duration_of_animation:2s;
+$mode_of_animation:both;
+$low_level_of_opacity:0.3;
+$high_level_of_opacity:1;
+$black_color:black;
+$white_color:white;
+$gray_color:#555;
+
+
+
+
+body {
+    background-color: $lightgray_color;
+    font-family: $body_text_style; 
+    animation-name: $animatiion_name;
+    animation-delay: $delay_of_animation;
+    animation-duration: $duration_of_animation;
+    animation-fill-mode: $mode_of_animation;
+    opacity: $low_level_of_opacity;
+
+}
+
+
+@keyframes body_section {
+   from {opacity:$low_level_of_opacity;}
+   to {opacity:$high_level_of_opacity;}
+}
+
+
+.actived {
+  
+    color: $black_color;
+    
+  }
+  
+   li a:hover:not(.actived) {
+    background-color: $gray_color;
+    color: $white_color;
+  } 
+  
